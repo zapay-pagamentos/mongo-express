@@ -22,8 +22,8 @@ describe('CSV', function () {
   });
 
   it('should handle mongo ObjectID', function () {
-    const data = [{ a: { a: mongo.ObjectID('111111111111111111111111') } }];
-    const result = '"a.a"\n"ObjectId(""111111111111111111111111"")"';
+    const data = [{ a: { a: mongo.ObjectId('111111111111111111111111') } }];
+    const result = '"a.a"\n"111111111111111111111111"';
     test(data, result);
   });
 
